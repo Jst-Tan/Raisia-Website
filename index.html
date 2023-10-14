@@ -23,7 +23,20 @@ margin: 10px;
 text-align: center;
 margin-left: auto;
 margin-right: auto;
-animation: drop-in 10s ease 200ms backwards;
+animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 200%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: auto;
+    width: 60%;
+  }
 }
 
 img {
